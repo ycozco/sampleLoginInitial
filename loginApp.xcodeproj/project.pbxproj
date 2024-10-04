@@ -17,6 +17,9 @@
 		8CC253232CAD9295009891F9 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC253222CAD9295009891F9 /* SQLite */; };
 		8CC253252CAD92EC009891F9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC253242CAD92EC009891F9 /* DatabaseManager.swift */; };
 		8CC253272CAD938E009891F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC253262CAD938E009891F9 /* LoginViewController.swift */; };
+		8CC253292CAF679A009891F9 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC253282CAF679A009891F9 /* PersistenceController.swift */; };
+		8CC2532C2CAF68F5009891F9 /* loginAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2532A2CAF68F5009891F9 /* loginAppModel.xcdatamodeld */; };
+		8CC253342CAF6B18009891F9 /* AppUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC253322CAF6B18009891F9 /* AppUser+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8CC253142CAD922C009891F9 /* loginAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8CC253242CAD92EC009891F9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		8CC253262CAD938E009891F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8CC253282CAF679A009891F9 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		8CC2532B2CAF68F5009891F9 /* loginAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = loginAppModel.xcdatamodel; sourceTree = "<group>"; };
+		8CC253322CAF6B18009891F9 /* AppUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 		8CC252F62CAD9229009891F9 /* loginApp */ = {
 			isa = PBXGroup;
 			children = (
+				8CC253322CAF6B18009891F9 /* AppUser+CoreDataProperties.swift */,
 				8CC253242CAD92EC009891F9 /* DatabaseManager.swift */,
 				8CC252F72CAD9229009891F9 /* loginAppApp.swift */,
 				8CC252F92CAD9229009891F9 /* ContentView.swift */,
 				8CC252FB2CAD922C009891F9 /* Assets.xcassets */,
 				8CC252FD2CAD922C009891F9 /* Preview Content */,
 				8CC253262CAD938E009891F9 /* LoginViewController.swift */,
+				8CC253282CAF679A009891F9 /* PersistenceController.swift */,
+				8CC2532A2CAF68F5009891F9 /* loginAppModel.xcdatamodeld */,
 			);
 			path = loginApp;
 			sourceTree = "<group>";
@@ -272,6 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC253272CAD938E009891F9 /* LoginViewController.swift in Sources */,
+				8CC2532C2CAF68F5009891F9 /* loginAppModel.xcdatamodeld in Sources */,
+				8CC253342CAF6B18009891F9 /* AppUser+CoreDataProperties.swift in Sources */,
+				8CC253292CAF679A009891F9 /* PersistenceController.swift in Sources */,
 				8CC252FA2CAD9229009891F9 /* ContentView.swift in Sources */,
 				8CC252F82CAD9229009891F9 /* loginAppApp.swift in Sources */,
 				8CC253252CAD92EC009891F9 /* DatabaseManager.swift in Sources */,
@@ -619,6 +631,19 @@
 			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8CC2532A2CAF68F5009891F9 /* loginAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CC2532B2CAF68F5009891F9 /* loginAppModel.xcdatamodel */,
+			);
+			currentVersion = 8CC2532B2CAF68F5009891F9 /* loginAppModel.xcdatamodel */;
+			path = loginAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CC252EC2CAD9229009891F9 /* Project object */;
 }
